@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Protest+Guerrilla&family=Raleway:wght@200;400;600&display=swap');
+
+body,html
+{
+    background-color: #19376D;
+    margin:0px;
+    padding:0px;
+}
+nav
+{
+    padding:10px;
+    background-color: #0B2447;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    margin:0px;
+    color:white;
+    font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 2rem;
+}
+.logosubheading
+{
+    margin:0px;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-right:25px;
+    cursor:pointer;
+}
+.logosubheading:hover
+{
+    filter:drop-shadow(0px 0px 8px #A5D7E8);
+    color:#A5D7E8;
+}
+#background
+{
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ActionBtn
+{
+    background-color: #0B2447;
+    border:none;
+    color:white;
+    padding:15px;
+    font-family: 'Poppins',sans-serif;
+    margin:20px;
+    font-size: 1.2rem;
+    cursor:pointer;
+    border-radius: 10px;
+    border:1px solid transparent;
+    transition-duration: 0.4s;
+}
+.ActionBtn:hover
+{
+    background-color: transparent;
+    backdrop-filter: blur(35px);
+    border:1px solid white;
+}
+#itchiosection
+{
+    padding:20px;display:flex;justify-content: center;align-items: center;flex-wrap: wrap;
+}
+.basic-grid 
+{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    padding: 10px;
+    align-items: center;
+}
+.stackicon
+{
+    width:100%;
+    cursor: pointer;
+}
+.stackicon:hover
+{
+    filter: drop-shadow(0px 0px 8px white);
+    transform:scale(1.1);
+}
+.widecards
+{
+    min-width:40%;
+    border:1px solid white;
+    padding:3px;
+    height:140px;
+    display:flex;
+    flex-direction: row;
+    overflow:hidden;
+    cursor:pointer;
+    margin:5px;
+}
+.textheading
+{
+    text-align: center;
+    color:white;
+    font-family: 'Poppins',sans-serif;
+    margin:0px;
+}
+.link
+{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+#aboutmetxt
+{
+    font-weight: 200;font-size: 1.0rem;padding:10px;text-align: center;
+}
+.skillcards
+{
+    border-radius:10px;
+    padding:5px;
+    background: hsla(247, 100%, 78%, 1);
+    background: linear-gradient(135deg, hsla(247, 100%, 78%, 1) 19%, hsla(235, 94%, 63%, 1) 84%);
+    background: -moz-linear-gradient(135deg, hsla(247, 100%, 78%, 1) 19%, hsla(235, 94%, 63%, 1) 84%);
+    background: -webkit-linear-gradient(135deg, hsla(247, 100%, 78%, 1) 19%, hsla(235, 94%, 63%, 1) 84%);
+    background: -webkit-linear-gradient(135deg, hsla(247, 100%, 78%, 1) 19%, hsla(235, 94%, 63%, 1) 84%);
+    width:15%;
+    margin:5px;
+    min-width:300px;
+    height:450px;
+    filter:brightness(1);
+    cursor:pointer;
+    border:1px solid transparent;
+}
+.skillcards:hover
+{
+    border:1px solid white;
+}
+#resizewebimage
+{
+    height:100%;
+}
+.skillcardheading
+{
+    margin:0px;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+#navbarbtn
+{
+    border:1px solid transparent;
+}
+#logoheadingTxt
+{
+    font-size:5rem;
+}
+#customsection
+{
+    padding:10px;margin-left: 10px;display:none;flex-direction: row;flex-wrap: wrap;
+}
+#webdevicons
+{
+    min-width:150px;
+}
+.resizedcard
+{
+    height:200px;
+}
+@media screen and (max-width: 920px) {
+    
+    #navbarbtn
+    {
+        display:none;
+    }
+    .basic-grid
+    {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+}
+@media screen and (max-width: 520px) {
+    
+    #navbarbtn
+    {
+        display:none;
+    }
+    #logoheadingTxt
+    {
+        font-size: 3rem;
+    }
+    #itchiosection
+    {
+        display:none;
+    }
+    #customsection
+    {
+        display:flex;
+    }
+    #webdevicons
+    {
+        min-width:110px;
+    }
+    .textheading
+    {
+        font-size: 0.8rem;
+    }
+    .link
+    {
+        font-size:1rem;
+    }
+    .resizedcard
+    {
+        flex-direction: column;
+        height:400px;
+    }
+    .widecards.resizedcard > div:first-child 
+    {
+        height:200%;
+    }
+    #resizewebimage
+    {
+        height:200%;
+    }
+    #aboutmetxt
+    {
+        font-size: 0.9rem;
+        padding:20px;
+    }
+}
+
