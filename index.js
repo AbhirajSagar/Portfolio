@@ -7,3 +7,9 @@ function DownloadResume()
    link.click();
    document.body.removeChild(link);
 }
+function scrollToElement(id)
+{
+   console.log("Scrolling happened");
+   element = document.getElementById(id);
+   element.scrollIntoView();
+}

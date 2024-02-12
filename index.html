@@ -12,11 +12,11 @@
         <h2 class = "logo">Abhiraj Sagar</h2>
         <div id="navbarbtn">
             <a class = "logosubheading">Home</a>
-            <a class = "logosubheading">Skills</a>
-            <a class = "logosubheading">Resume</a>
-            <a class = "logosubheading">About Me</a>
-            <a class = "logosubheading">Projects</a>
-            <a class = "logosubheading">Contact</a>
+            <a class = "logosubheading" onclick = "scrollToElement('skillssection');">Skills</a>
+            <a class = "logosubheading" onclick = "DownloadResume();">Resume</a>
+            <a class = "logosubheading" onclick = "scrollToElement('aboutmesection');">About Me</a>
+            <a class = "logosubheading" onclick = "scrollToElement('projectssection');">Projects</a>
+            <a class = "logosubheading" onclick = "scrollToElement('contactsection');">Contact</a>
         </div>
     </nav>
     <div id = "background">
@@ -42,7 +42,7 @@
             </div>
        
         
-        <h2 class = "logo" style = "margin:20px;margin-bottom:0px;">UNITY PROJECTS</h2>
+        <h2 class = "logo" id = "projectssection" style = "margin:20px;margin-bottom:0px;">UNITY PROJECTS</h2>
         <div id = "itchiosection">
             <iframe style = "flex-grow: 1;margin-left:5px;min-width: 500px;" frameborder="0" src="https://itch.io/embed/2436612?border_width=2&amp;bg_color=576CBC&amp;fg_color=feffff&amp;link_color=0B2447&amp;border_color=ffffff" width="554" height="169"><a href="https://abhiraj99.itch.io/mr-fox">Mr. Fox by Abhiraj99</a></iframe>
             <iframe style = "flex-grow: 1;margin-left:5px;min-width: 500px;" frameborder="0" src="https://itch.io/embed/2396146?border_width=2&amp;bg_color=576CBC&amp;fg_color=ffffff&amp;link_color=19376D&amp;border_color=ffffff" width="554" height="169"><a href="https://abhiraj99.itch.io/skyline-showdown">Skyline Showdown by Abhiraj99</a></iframe>
@@ -54,7 +54,7 @@
                     
                 </div>
                 <div style = "border:1px solid white;height:100%;flex-grow:3;display:flex;justify-content: center;align-items: center;flex-direction: column;padding-left:5px;padding-right:5px;">
-                    <a href = "https://abhiraj99.itch.io/mr-fox" class = "textheading link">Mr. Fox</a>
+                    <a href = "https://github.com/AbhirajSagar/VocalGPT" class = "textheading link">Mr. Fox</a>
                     <p class = "textheading">An adventure game prototype made in Unity 2023</p>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     
                 </div>
                 <div style = "border:1px solid white;height:100%;flex-grow:3;display:flex;justify-content: center;align-items: center;flex-direction: column;padding-left:5px;padding-right:5px;">
-                    <a href = "https://abhiraj99.itch.io/skyline-showdown" class = "textheading link">Skyline Showdown</a>
+                    <a href = "https://abhirajsagar.github.io/AICodeReviewer/" class = "textheading link">Skyline Showdown</a>
                     <p class = "textheading">A Scifi Endless Runner action game made in Unity 2018</p>
                 </div>
             </div>
@@ -119,12 +119,12 @@
                     
                 </div>
                 <div id = "infocard" style = "border:1px solid white;height:100%;flex-grow:3;display:flex;justify-content: center;align-items: center;flex-direction: column;padding-left:5px;padding-right:5px;">
-                    <a href = "https://www.cgtrader.com/designers/bishansagar" class = "textheading link">CGTrader</a>
+                    <a href = "https://www.behance.net/gallery/191216455/Graphic-Designs" class = "textheading link">CGTrader</a>
                     <p class = "textheading">Wide variety of multipurpose 3D models made in Blender and rendered with Cycles</p>
                 </div>
             </div>
         </div>
-    <h2 class = "logo" style = "text-align: center;margin:20px;">Skills</h2>
+    <h2 class = "logo" id = "skillssection" style = "text-align: center;margin:20px;">Skills</h2>
         <section style = "padding:20px;display:flex;justify-content: center;align-items: center;flex-wrap: wrap;">
             <div class = "skillcards">
                 <h2 class = "skillcardheading" style = "text-align: center;margin:20px;">Unity</h2>
@@ -179,13 +179,13 @@
         <h2 class = "logo" style = "text-align: center;margin:20px;">Personal Details</h2>
         <section style = "padding:10px;display:flex;justify-content: center;align-items: center;flex-wrap: wrap;overflow: hidden;">
             <div class = "skillcards"style = "margin:15px;flex-grow: 1;min-width: 350px;display:flex;justify-content:center;align-items:center;flex-direction:column;">
-                <h2 class = "skillcardheading">About Me</h2>
+                <h2 id = "aboutmesection" class = "skillcardheading">About Me</h2>
                 <p class = "skillcardheading" id = "aboutmetxt">
                     My Name is Abhiraj Sagar and I have recently completed my 12th in 2023. I have been using Unity for 2 to 3 years and had made a dozen of prototypes along with two mobiles games, published on itch.io.<br>Besides, Unity I also have practical experience in using Blender for various purposes ranging from Modelling, Texturing, Rendering, Baking, Rigging and basic animations. I am a self-taught programmer and have also developed some side projects beside games. I am currently looking for internships or freelancing opportunity to get practical on ground skills.
                 </p>
             </div>
             <div class = "skillcards"style = "margin:15px;flex-grow: 1;min-width: 350px;display:flex;justify-content:center;align-items:center;flex-direction:column;">
-                <h2 class = "skillcardheading" style = "margin:20px;">Contact Information</h2>
+                <h2 id = "contactsection" class = "skillcardheading" style = "margin:20px;">Contact Information</h2>
                 <div style = "display:flex;flex-direction: row;justify-content: center;align-items: center;">
                     <span class="material-symbols-outlined" style = "color:white;">
                         mail
@@ -199,10 +199,16 @@
                     <p class = "skillcardheading" style ="margin:1px;font-weight: 200;font-size: 1.2rem;" >+91 7505694477</p>
                 </div>
                 <div style = "display:flex;flex-direction: row;justify-content: center;align-items: center;">
-                    <span class="material-symbols-outlined" style = "color:white;">
-                        chat
+                    <span class="material-symbols-outlined" style = "color:white;background-image:url('images/whatsapp.png');background-position: center;width:22px;height:22px;background-size: cover;margin-right:5px;">
+                        
                     </span>
                     <p class = "skillcardheading" style ="margin:1px;font-weight: 200;font-size: 1.2rem;" >+91 7505694477</p>
+                </div>
+                <div style = "display:flex;flex-direction: row;justify-content: center;align-items: center;">
+                    <span class="material-symbols-outlined" style = "color:white;background-image:url('images/discord.png');background-position: center;width:30px;height:22px;background-size: cover;margin-right:5px;">
+                        
+                    </span>
+                    <p class = "skillcardheading" style ="margin:1px;font-weight: 200;font-size: 1.2rem;" >abhiraj2054</p>
                 </div>
                 
             </div>
