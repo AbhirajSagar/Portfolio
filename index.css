@@ -214,15 +214,15 @@ nav
     .resizedcard
     {
         flex-direction: column;
-        height:400px;
+        height:300px;
     }
     .widecards.resizedcard > div:first-child 
     {
-        height:200%;
+        height:100%;
     }
     #resizewebimage
     {
-        height:200%;
+        height:100%;
     }
     #aboutmetxt
     {
